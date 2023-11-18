@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    '@pinia/nuxt',
-  ]
-})
+    "@pinia/nuxt",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/eslint-module",
+    "@nuxt/devtools",
+  ],
+});
