@@ -1,6 +1,8 @@
 <template>
   <footer class="py-10">
-    <div class="container mx-auto flex justify-between items-center">
+    <div
+      class="container px-4 flex-col lg:flex-row gap-2 mx-auto flex justify-between items-center"
+    >
       <div>&copy; 2021, all rights reserved.</div>
 
       <div>

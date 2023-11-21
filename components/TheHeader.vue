@@ -2,7 +2,7 @@
 
 <template>
   <header class="py-6 shadow-md">
-    <div class="flex container mx-auto justify-between">
+    <div class="flex px-4 container mx-auto justify-between">
       <NuxtLink :to="{ name: 'index' }">App</NuxtLink>
 
       <ul class="flex gap-8 items-center">
