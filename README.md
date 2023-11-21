@@ -2,6 +2,8 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+Use the LTS node version to run this project.
+
 ## Setup
 
 Make sure to install the dependencies:
@@ -48,29 +50,41 @@ temperature on the website (the company is located in Basel,
 Switzerland).
 
 A colleague from the IT department has already kindly prepared the API
-configuration in the store module of the web application. However, he
+configuration in a composable. However, he
 did not have time to finish the work before holiday. You are now asked
-to complete the colleague's task. In particular, the store action needs
-to be finished and called, data committed to the application state and
-bind the state to the UI. As for displaying the current weather
+to complete the colleague's task. In particular, the composable function
+that fetches the data needs to be finished. As for displaying the current weather
 conditions in the UI, the designer has not given any particular
 instructions (you are free to design it). However, he thought that it
 would be nice to have an icon to depict the current weather condition.
 
 The company's Software Architect has given three key advices: he wants
-to keep the application modular and thus work with components. He also
-insists on using proper state management with Vuex. As for styling the
+to keep the application modular and thus work with components. As for styling the
 application, we should use tailwindCSS as much as possible so that we
 can update the corporate design system anytime.
 
 Some links to get you started with the API (OpenWeatherMap):
 
-- [Fetching by city](https://openweathermap.org/api/geocoding-api){:target="\_blank"}
+- [Fetching by city](https://openweathermap.org/current#geocoding)
 
-- [Weather condition icons](https://openweathermap.org/weather-conditions){:target="\_blank"}
+- [Weather condition icons](https://openweathermap.org/weather-conditions)
+
+### Tasks
+
+- Complete the `useWeather` composable function in `composables/weather.ts` to fetch the current weather data from the API.
+- Display the current weather condition and temperature in the UI. Create a custom card component for this purpose.
+- Add an icon to depict the current weather condition -> https://openweathermap.org/weather-conditions.
+- Style it with Tailwind.
+- Add two additional buttons to load weather data for different cities of your choice.
 
 ### Bonus tasks
 
 1. Handle the error and loading state of the API call. While loading, show a spinner. In case of an error, display an error message.
 
 2. Store the weather data into local storage to reduce initial page load time. Retrieve data from local storage upon opening the web application and asynchronously overwrite it with the latest data from the API.
+
+### Submission
+
+After cloning the repo, create a branch with your name and start working on the task.
+
+Please submit your solution as a pull request to this repository. We will review your code and get back to you as soon as possible.
