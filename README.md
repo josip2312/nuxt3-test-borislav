@@ -60,8 +60,7 @@ would be nice to have an icon to depict the current weather condition.
 
 The company's Software Architect has given three key advices: he wants
 to keep the application modular and thus work with components. As for styling the
-application, we should use tailwindCSS as much as possible so that we
-can update the corporate design system anytime.
+application, we should use tailwind.
 
 Some links to get you started with the API (OpenWeatherMap):
 
@@ -74,12 +73,12 @@ Some links to get you started with the API (OpenWeatherMap):
 - Complete the `useWeather` composable function in `composables/weather.ts` to fetch the current weather data from the API.
 - Display the current weather condition and temperature in the UI. Create a custom card component for this purpose.
 - Add an icon to depict the current weather condition -> https://openweathermap.org/weather-conditions.
-- Style it with Tailwind.
+- Style it with Tailwind (simple).
 - Add two additional buttons to load weather data for different cities of your choice.
 
 ### Bonus tasks
 
-1. Handle the error and loading state of the API call. While loading, show a spinner. In case of an error, display an error message.
+1. Handle the error and loading state of the API call. While loading, show a spinner. In case of an error, display an error message. You can intentionally make the API call take one or two seconds.
 
 2. Store the weather data into local storage to reduce initial page load time. Retrieve data from local storage upon opening the web application and asynchronously overwrite it with the latest data from the API.
 
