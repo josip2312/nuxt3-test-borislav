@@ -80,7 +80,9 @@ Some links to get you started with the API (OpenWeatherMap):
 
 1. Handle the error and loading state of the API call. While loading, show a spinner. In case of an error, display an error message. You can intentionally make the API call take one or two seconds.
 
-2. Store the weather data into local storage to reduce initial page load time. Retrieve data from local storage upon opening the web application and asynchronously overwrite it with the latest data from the API.
+2. Add the current city to the URL and fetch the data from that city on reload.
+
+3. Store the weather data into local storage to reduce initial page load time. Retrieve data from local storage upon opening the web application and asynchronously overwrite it with the latest data from the API.
 
 ### Submission
 
